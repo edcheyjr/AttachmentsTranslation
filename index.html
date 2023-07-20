@@ -1,0 +1,193 @@
+﻿
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Demo of Mingqing Luo transaltion tools</title>
+
+	<link rel="stylesheet" href="css/index.css">
+
+	</head>
+	<style type="text/css">
+#content
+{
+width:100px;
+height:100px;
+background:green;
+position:relative;
+margin:100px;
+}
+#inform
+{
+width:200px;
+height:200px;
+border:1px solid #ccc;
+background:white;
+display:none;
+position:absolute;
+}
+#inform span
+{
+width:0px;
+height:0px;
+border-width:10px;
+border-style:none solid solid none;
+position:absolute;
+}
+#inform .tb-border
+{
+left:-10px;
+border-color:transparent #ccc transparent transparent;
+top:-1px;
+}
+#inform .tb-background
+{
+left:-9px;
+border-color:transparent white transparent transparent;
+}
+</style>
+	<body>
+	<main class="translate">
+		<header class="t-header">
+			<span class="title">Current language:</span>
+			<span class="result">English</span>
+			<ul class="lang-panel">
+				<li data-type="en">English</li>
+				<li data-type="zh">Chinese</li>
+				<li data-type="jp">Japanese</li>
+				<li data-type="kor">Korean</li>
+				<li data-type="fra">French</li>
+				<li data-type="ru">Russian</li>
+				<li data-type="de">German</li>
+			</ul>
+		</header>
+		<section class="content">
+			<textarea class="input" placeholder="Please enter the word or sentence you want to translate"  id="textarea"></textarea>
+			<textarea class="output" placeholder="translation result"></textarea>
+		</section>
+		<footer class="t-footer">
+			<button type="button" class="transbtn" id="translate1">translate</button>
+			<button type="button" class="clear">clear</button>
+		</footer>
+	</main>
+	
+     
+	<script LANGUAGE="JavaScript">
+		function SelectText() {
+			var selecter
+			try {
+				selecter = window.getSelection().toString();
+				if (selecter != null && selecter.trim() != "") {
+				}
+			} catch (err) {
+				selecter = document.selection.createRange().text;
+				if (s != null && s.trim() != "") {
+				}
+			}
+			return selecter;
+		}
+
+		document.addEventListener('mouseup', (e) => {
+			var clickEvent=document.createEvent('MouseEvent');
+			clickEvent.initMouseEvent('click',false,false,window,0,0,0,0,0,false,false,false,false,0,null);
+			const text = SelectText();
+			document.getElementById('textarea').value = text;
+			setTimeout( function(){
+            console.log('debug check')
+			 document.getElementById('translate1').dispatchEvent(clickEvent);
+            }, 5 * 100 );
+           
+		});
+		//-->
+	</script>
+	<style type="text/css">
+      #content
+      {
+        width:100px;
+        height:100px;
+        background:green;
+        position:relative;
+        margin:100px;
+      }
+      #inform
+      {
+        width:200px;
+        height:200px;
+        border:1px solid #ccc;
+        background:white;
+        display:none;
+        position:absolute;
+      }
+      #inform span
+      {
+        width:0px;
+        height:0px;
+        border-width:10px;
+        border-style:none solid solid none;
+        position:absolute;
+      }
+      #inform .tb-border
+      {
+        left:-10px;
+        border-color:transparent #ccc transparent transparent;
+        top:-1px;
+      }
+      #inform .tb-background
+      {
+        left:-9px;
+        border-color:transparent white transparent transparent;
+      }
+</style>
+   <script type="text/javascript">
+    window.onload=function()
+   {
+    var content=document.getElementById("content");
+    var inform=document.getElementById("inform");
+  content.onmouseover=function(ev)
+  {
+    var ev=ev||event;
+    inform.style.display="block";
+    inform.style.left=(ev.clientX-this.offsetLeft+20)+"px";
+    inform.style.top=(ev.clientY-this.offsetTop-20)+"px";
+  }
+  content.onmousemove=function(ev)
+    {
+    var ev=ev||event;
+    inform.style.left=(ev.clientX-this.offsetLeft+20)+"px";
+    inform.style.top=(ev.clientY-this.offsetTop-10)+"px";
+    }
+       content.onmouseout=function(ev){inform.style.display="none";}
+  }
+</script>
+<form id="wordForm" method="POST">
+	<p class="title">demo test for mouse slection</p>
+	<p id="parent" class="translate"> Computer Science is the study of computers and computational systems. Unlike electrical and computer engineers, computer scientists deal mostly with software and software systems; this includes their theory, design, development, and application.
+
+Principal areas of study within Computer Science include artificial intelligence, computer systems and networks, security, database systems, human computer interaction, vision and graphics, numerical analysis, programming languages, software engineering, bioinformatics and theory of computing.
+	
+Although knowing how to program is essential to the study of computer science, it is only one element of the field. Computer scientists design and analyze algorithms to solve programs and study the performance of computer hardware and software. The problems that computer scientists encounter range from the abstract-- determining what problems can be solved with computers and the complexity of the algorithms that solve them – to the tangible – designing applications that perform well on handheld devices, that are easy to use, and that uphold security measures.
+键盘按下事件
+
+Graduates of University of Maryland’s Computer Science Department are lifetime learners; they are able to adapt quickly with this challenging field. </p>
+</form>
+	<div id="content">
+    <div id="inform">
+	<span class="tb-border"></span>
+    <span class="tb-background"></span>
+	<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+	<p>develop by Mingqing Luo</p>
+	<p>CPS<a href="http://cps491s22-team11.bitbucket.io" target="_blank">491s21</a></p>
+	</div>
+
+
+	<!-- tooltip design -->
+	<div class="tooltip">
+			I’m a link with a tooltip.
+	</div>
+	<!--js引入部分-->
+	
+	</body>
+	<script src="plugins/md5.js"></script>
+	<script src="js/index.js"></script>
+	</html>

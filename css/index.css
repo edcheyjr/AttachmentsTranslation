@@ -1,0 +1,441 @@
+.lang-panel li:beforee {
+  height: 0%;
+  width: 2px;
+}
+.lang-panel li:after {
+  width: 0%;
+  height: 2px;
+}
+.lang-panel li:hover {
+  color: #fff;
+  position: relative;
+  display: block;
+  width: 15%;
+  height: 45px;
+  background: transparent;
+  box-shadow: none;
+}
+lang-panel li:hover:before {
+  height: 100%;
+}
+lang-panel li:hover:after {
+  width: 100%;
+}
+.lang-panel li:span:hover {
+  width: 2px;
+  height: 0%;
+}
+.lang-panel li:span:before,
+.lang-panel li:span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.lang-panel li:span:before {
+  width: 2px;
+  height: 0%;
+}
+.lang-panel li:span:after {
+  width: 0%;
+  height: 2px;
+}
+.lang-panel li:span:hover:before {
+  height: 100%;
+}
+.lang-panel li:span:hover:after {
+  width: 100%;
+}
+.t-footer {
+  width: 100%;
+  height: 45px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.t-footer button {
+  width: 60px;
+  height: 45px;
+  background-color: rgba(49, 196, 240, 0.92);
+  color: #efebf2;
+  text-align: center;
+  line-height: 45px;
+  border: 1px solid rgba(238, 238, 238, 0.17);
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.t-footer button:hover {
+  transform: scale(1.1);
+}
+
+/* Add animation effect to the button,
+and
+  now
+  users
+  can
+  accurately
+  know
+  whether
+  they
+  have
+  successfully
+  clicked
+  the
+  buttonAdd
+  animation
+  effect
+  to
+  the */
+button,
+/* and
+  now
+  users
+  can
+  accurately
+  know
+  whether
+  they
+  have
+  successfully
+  clicked
+  the
+  buttonbody, */
+html,
+section,
+main,
+header,
+div,
+button,
+ul,
+li,
+span,
+textarea,
+footer {
+  margin: 0;
+  padding: 0;
+}
+body,
+html,
+section,
+main,
+header,
+div,
+button,
+ul,
+li,
+span,
+textarea,
+footer {
+  box-sizing: border-box;
+}
+body,
+html,
+section,
+main,
+header,
+div,
+button,
+ul,
+li,
+textarea,
+footer {
+  display: block;
+}
+main,
+.content,
+.t-header {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lang-panel {
+  position: absolute;
+}
+button,
+textarea {
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.title,
+.result {
+  font-size: 20px;
+  line-height: 45px;
+  color: rgb(33, 32, 32, 0.99);
+}
+body {
+  font: 16px 'Timenew';
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-image: url('20200629150726_hesuh (2).jpg');
+  background-size: 100% 100%;
+}
+
+main {
+}
+
+main .t-header {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #f2f2f2;
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
+}
+.t-header .title {
+  border-radius: 2px;
+  position: relative;
+  background: tomato;
+  text-align: left;
+  text-transform: uppercase;
+  color: ivory;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s;
+}
+.t-header .result {
+  text-align: right;
+  text-transform: uppercase;
+  color: #ff0202;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s;
+}
+
+main .content {
+  width: 100%;
+  height: 400px;
+  background-color: transparent;
+}
+.content textarea {
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  margin-left: 10px;
+  float: left;
+  font-size: 18px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.content textarea:focus {
+  border: 1px solid rgba(121, 178, 214, 0.82);
+  box-shadow: 0 0 10px rgba(121, 178, 214, 0.82);
+}
+.translate .content .input {
+}
+.translate .content .input {
+}
+.lang-panel {
+  width: calc(80% - 20px);
+  height: 42px;
+  top: 0;
+  left: 250px;
+}
+
+.lang-panel li {
+  width: 15%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin-left: 50px;
+  color: #fb0000;
+  float: left;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0px 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn-3 li:span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  position: relative;
+  display: block;
+  width: 15%;
+  height: 45px;
+}
+.lang-panel li:before,
+.lang-panel li:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.lang-panel li:beforee {
+  height: 0%;
+  width: 2px;
+}
+.lang-panel li:after {
+  width: 0%;
+  height: 2px;
+}
+.lang-panel li:hover {
+  color: #fff;
+  position: relative;
+  display: block;
+  width: 15%;
+  height: 45px;
+  background: transparent;
+  box-shadow: none;
+}
+lang-panel li:hover:before {
+  height: 100%;
+}
+lang-panel li:hover:after {
+  width: 100%;
+}
+.lang-panel li:span:hover {
+  width: 2px;
+  height: 0%;
+}
+.lang-panel li:span:before,
+.lang-panel li:span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.lang-panel li:span:before {
+  width: 2px;
+  height: 0%;
+}
+.lang-panel li:span:after {
+  width: 0%;
+  height: 2px;
+}
+.lang-panel li:span:hover:before {
+  height: 100%;
+}
+.lang-panel li:span:hover:after {
+  width: 100%;
+}
+.t-footer {
+  width: 100%;
+  height: 45px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.t-footer button {
+  width: 60px;
+  height: 45px;
+  background-color: rgba(49, 196, 240, 0.92);
+  color: #efebf2;
+  text-align: center;
+  line-height: 45px;
+  border: 1px solid rgba(238, 238, 238, 0.17);
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-top: 5px;
+  float: right;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.t-footer button:hover {
+  transform: scale(1.1);
+}
+.translate .t-header .title {
+}
+
+p span:hover {
+  background-color: tomato;
+}
+
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 10px solid #000;
+  border-top: 10px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 10px solid transparent;
+  border-left: px solid transparent;
+  content: ' ';
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
